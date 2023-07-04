@@ -1,0 +1,322 @@
+/* Declarando as cores - chamar a cor usando ex: background-color: var (--color-1)*/
+:root {
+    --color-1: #f2ea7e;
+    --color-2: #d9d0c5;
+    --color-3: #8c2020;
+    --color-4: #732c2c;
+    --color-5: #0d0d0d;
+  }
+  
+  /* css geral */
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  main {
+    width: 100%;
+    padding-top: 165px;
+    min-height: 700px;
+  }
+  
+  /* header */
+  
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color-4);
+    }
+ 
+    header img{
+    margin-top: 5px;
+    width: 100px;
+    }
+ 
+ nav{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     font-weight: bold;
+     height: 15vh;
+     width: 100%;
+ }
+ 
+ .nav-list{
+     list-style: none;
+     text-decoration: none;
+     display: flex;
+ }
+ 
+ .nav-list li{
+     margin-left: 10px;
+ }
+ 
+ 
+ .nav-list a{
+     color: var(--color-5);
+     background-color: var(--color-2);
+     text-decoration: none;
+     transition: 0.5s;
+     padding: 12px;
+     border-radius: 10px;
+ }
+ 
+ .nav-list a:hover{
+     background-color: var(--color-5);
+     padding: 15px;
+     color: var(--color-2);
+     border-radius: 10px;
+ }
+ 
+ #divBusca{
+     background-color:#E0EEEE;
+     border:solid 2px var(--color-2);
+     border-radius:10px;
+     width:350px;
+     height:32px;
+ }
+   
+ #txtBusca{
+     float:left;
+     background-color:transparent;
+     padding-left:5px;
+     font-size:18px;
+     border:none;
+     height:32px;
+     width: 190px;
+     outline: none;
+ }
+   
+ #btnBusca{
+     border:none;
+     float:right;
+     height:100%;
+     border-radius:0 7px 7px 0;
+     width:30%;
+     font-weight:bold;
+     background: var(--color-2);
+     cursor: pointer;
+ }
+ 
+ #btnbusca button:hover{
+     background-color: var(--color-5);
+ }
+  
+  /* main */
+  #exibir{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: var(--color-2);
+    color: var(--color-4);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 40%;
+    max-width: 600px;
+    border-radius: 5px;
+  }
+
+  .modal-content input{
+    width: 50%;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid var(--color-4);
+    outline: none;
+  }
+
+  #modal-preferencias{
+    outline-color: var(--color-4);
+    width: 50%;
+    height: 50px;
+    border: 1px solid var(--color-4);
+    border-radius: 5px;
+  }
+
+  .modal-content form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  #modal-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #modal-form button{
+    font-weight: bold;
+    width: 20%;
+    padding: 5px;
+    color: var(--color-3);
+    border-radius: 5px;
+    border: 1px solid var(--color-3);
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+  }
+
+  #modal-form button:active{
+    background-color: var(--color-3);
+    color: var(--color-2);
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+
+  
+  .informacoes-cliente {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .foto-perfil-cliente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #btn-perfil button{
+    margin-top: 5px;
+    width: auto;
+    font-weight: bold;
+    padding: 5px;
+    color: var(--color-2);
+    background-color: var(--color-3);
+    border-radius: 5px;
+    border: 2px solid var(--color-2);
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+  }
+
+  #btn-perfil button:active{
+    color: var(--color-3);
+    background-color: var(--color-2);
+  }
+  
+  .foto-perfil-cliente .img-perfil-cliente {
+    border: 2px solid var(--color-2);
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .informacoes-cliente > input {
+    padding-left: 20px;
+    border: 2px solid var(--color-2);
+    border-radius: 100px;
+  }
+  .informacoes-cliente > input:hover {
+    border: 2px solid var(--color-5);
+    transition: 0.2s;
+  }
+  .informacoes-cliente button {
+    border: 2px solid var(--color-2);
+    border-radius: 100px;
+    color: var(--color-3);
+    cursor: pointer;
+  }
+  .informacoes-cliente button:hover {
+    background-color: var(--color-2);
+    color: var(--color-3);
+  }
+  
+  /* Preferencias cliente */
+  
+  
+  #preferencia-cliente {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .caixa-preferencia {
+    padding-top: 20px;
+    margin: 5%;
+    width: 50vw;
+    border: 2px solid var(--color-2);
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: white;
+  }
+
+  .caixa-preferencia p{
+    font-weight: bold;
+    color: var(--color-4);
+  }
+
+  .caixa-preferencia div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* footer */
+  footer{
+    background-color: var(--color-4);
+    box-shadow: 0px 0px 4px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px 0 20px 0;
+   }
+
+   #footer-logo{
+    color: var(--color-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }

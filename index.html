@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina inicial</title>
+    <link rel="stylesheet" href="style-barber.css" />
+  </head>
+
+  <body>
+        <header>
+          <img src="img/logo.png" alt="LOGO">
+          <nav>
+
+            <div id="divBusca">
+                <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                <button id="btnBusca">Buscar</button>
+              </div>
+
+                <ul class="nav-list">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="perfil-usuario.html">perfil</a></li>
+                  <li><a href="barbearia.html">barbearia</a></li>
+                  </ul>
+          </nav>
+        </header>
+
+        <!-- CARROSSEL-->
+        <main>
+            
+          <div class="container-slider">
+
+            <button id="prev-button"><svg class="img-seta" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+              <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg></button>
+  
+            <div class="container-images">
+              <img src="img/barber2.jpg" alt="barber" class="slider on">
+              <img src="img/barber1.jpg" alt="barber" class="slider">
+              <img src="img/barber3.jpg" alt="barber" class="slider">
+            </div>
+  
+            <button id="next-button"><svg class="img-seta" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+              <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+            </svg></button>
+  
+          </div>
+
+        </main>
+
+        <!-- FIM CARROSSEL-->
+
+        <div id="maps"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d23814.459259417734!2d-44.07012695299362!3d-19.943678456785584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBARBEARIA!5e0!3m2!1spt-BR!2sbr!4v1684680274699!5m2!1spt-BR!2sbr" width="758" height="345" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+        <!--slider sobre nos/propaganda-->
+
+    <div class="slider2"> 
+
+          <!--radio btns-->
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+          <!--fim radio btns-->
+
+          <!--imagens slider 2-->
+          <div class="point first">
+            <img src="img/point1.png" alt="">
+          </div>
+          <div class="point">
+            <img src="img/point2.png" alt="">
+          </div>
+          <div class="point">
+            <img src="img/point3.png" alt="">
+          </div>
+          <!--fim das imagens slider 2-->
+          
+          <!-- navigation auto-->
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+          </div>
+
+        </div>
+
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div>
+
+    </div>
+
+
+        <!--Fim do slider sobre nos/propaganda-->
+
+        <div id="caixas">
+
+          <div class="cont"><p>Cliente/barbeiro próximo</p></div>
+          <div class="cont"><p>Cliente/barbeiro próximo</p></div>
+          <div class="cont"><p>Cliente/barbeiro próximo</p></div>
+          <div class="cont"><p>Cliente/barbeiro próximo</p></div>
+
+        </div>
+
+        <footer>
+
+            <div id="footer-logo">
+                <a href="#"><img width="120px" src="img/logo.png" alt="LOGO"></a>
+
+              <span>© Copyright Barber Point 2023 - Todos os direitos reservados</span>
+
+                  <h3>Contato</h3>
+                  <span id="numero">(31)XXXXX-XXXX</span>
+                  <span>algumacoisalegal@gmail.com</span>
+              </div>
+            
+          
+        </footer>      
+
+        <script src="arquivo.js"></script>
+  </body>
+</html>

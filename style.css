@@ -1,0 +1,18 @@
+.barber-shop {
+    text-align: center;
+    margin: 50px;
+  }
+  
+  .rating {
+    font-size: 30px;
+  }
+  
+  .star {
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .star:hover {
+    color: gold;
+  }
+  

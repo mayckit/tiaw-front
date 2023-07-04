@@ -1,0 +1,100 @@
+body
+{
+    background-image: url(../img/fundo.png);
+}
+
+#tudo
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login_box
+{
+    position: relative;
+    margin-top: 10px;
+    color: black ;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #732c2c;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#logo_login
+{
+    width: 300px;
+}
+
+.check_credentials
+{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.check_credentials input
+{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+
+    margin-bottom: 10px;
+}
+
+span
+{
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.login_register
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login_register button
+{
+    width: 100%;
+
+    border: none;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    padding: 10px;
+
+    margin: 10px;
+
+    text-transform: uppercase;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    background-color: #d9d0c5;
+}
+
+#register a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.remember_login
+{
+    padding: 10px;
+    background-color: #d9d0c5;
+    text-transform: uppercase;
+}

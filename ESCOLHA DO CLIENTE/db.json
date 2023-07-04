@@ -1,0 +1,32 @@
+{
+  "barbeiros":[
+    { 
+  "id": "1",
+  "nome": "Barbearia do João",
+  "localizacao": "Rua A, 123",
+  "servicos": ["corte", "barba"],
+  "classificacao": 4.5,
+  "telefone": "123456789",
+  "email": "joao@example.com"
+},
+{
+  "id": "2",
+  "nome": "Barbearia do Carlos",
+  "localizacao": "Av. B, 456",
+  "servicos": ["corte"],
+  "classificacao": 3.8,
+  "telefone": "987654321",
+  "email": "carlos@example.com"
+},
+{
+  "id": "3",
+  "nome": "Barbearia do Marcos",
+  "localizacao": "Rua C, 789",
+  "servicos": ["corte", "barba", "corte-e-barba"],
+  "classificacao": 4.9,
+  "telefone": "555555555",
+  "email": "marcos@example.com"
+}
+]
+
+}

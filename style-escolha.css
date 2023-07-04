@@ -1,0 +1,105 @@
+#logo
+{
+    background-color: #732c2c;
+    display: flex;
+    justify-content: center;
+}
+
+#logo > img
+{
+    padding: 10px;
+    max-width: 150px;
+}
+
+#titulo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h1
+{
+    background-color: #d9d0c5;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover
+{
+    color: black;
+}
+
+h2
+{
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+li
+{
+    list-style: none;
+}
+
+.box_escolhas
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_clientes
+{
+    margin-right: 10px;
+    padding: 10px;
+    max-width: 300px;
+    border-style: solid;
+    border-radius: 8px;
+
+    transition: all 0.5s;
+    cursor: pointer;
+
+    background-color: #d9d0c5;
+}
+
+.box_barb
+{
+    margin-left: 10px;
+    padding: 10px;
+    max-width: 300px;
+    border-style: solid;
+    border-radius: 8px;
+
+    transition: all 0.5s;
+    cursor: pointer;
+
+    background-color: #d9d0c5;
+}
+
+.box_barb:hover
+{
+    transition: all 0.5s;
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.box_clientes:hover
+{
+    transition: all 0.5s;
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

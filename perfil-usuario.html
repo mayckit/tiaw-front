@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+    <link rel="stylesheet" href="perfil-usuario.css" />
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="LOGO">
+        <nav>
+
+          <div id="divBusca">
+              <input type="text" id="txtBusca" placeholder="Buscar..."/>
+              <button id="btnBusca">Buscar</button>
+            </div>
+
+              <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="barbearia.html">perfil</a></li>
+                </ul>
+        </nav>
+      </header>
+
+
+<!-- inicio-Main -->
+                    <!-- Modal -->
+                      <div id="modal" class="modal">
+                        <div class="modal-content">
+                          <span class="close" onclick="closeModal()">&times;</span>
+                          <h2>Editar Perfil</h2>
+                          <form id="modal-form">
+                            <label for="modal-nome">Nome:</label>
+                            <input type="text" id="modal-nome" required>
+                            <label for="modal-email">Email:</label>
+                            <input type="email" id="modal-email" required>
+                            <label for="modal-telefone">Telefone:</label>
+                            <input type="tel" id="modal-telefone" required>
+                            <label for="modal-idade">Idade:</label>
+                            <input type="text" id="modal-idade" placeholder="Digite sua idade">
+                            <label for="modal-tipo-cabelo">Tipo de Cabelo:</label>
+                            <input type="text" id="modal-tipo-cabelo" placeholder="Digite seu tipo de cabelo">
+                            <label for="modal-preferencias">Preferências:</label>
+                            <textarea id="modal-preferencias" placeholder="Digite suas preferências"></textarea>
+                            <button type="submit">Salvar</button>
+                          </form>
+                        </div>
+                      </div>
+
+
+                <div id="exibir"> 
+                    
+                </div>
+
+                <div id="preferencia-cliente">
+                    
+                </div>
+
+
+
+    <footer>
+
+        <div id="footer-logo">
+            <a href="#"><img width="120px" src="img/logo.png" alt="LOGO"></a>
+
+          <span>© Copyright Barber Point 2023 - Todos os direitos reservados</span>
+
+              <h3>Contato</h3>
+              <span id="numero">(31)XXXXX-XXXX</span>
+              <span>algumacoisalegal@gmail.com</span>
+          </div>
+        
+      
+    </footer>
+
+    <!--Arquivo JS-->
+    <script src="arquivo.js"></script>
+</body>
+
+</html>
